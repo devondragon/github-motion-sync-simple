@@ -1,6 +1,6 @@
 # GitHub Issue to Motion Sync
 
-Effortlessly synchronize your GitHub Issues to Motion, ensuring that your project management workflow stays in sync with your development process. This service uses Cloudflare Workers and Cloudflare D1 to securely and efficiently manage tasks across platforms, integrating GitHub issue tracking with Motion workspaces and projects.
+Effortlessly synchronize your [GitHub](https://github.com) Issues to [Motion](https://usemotion.com), ensuring that your project management workflow stays in sync with your development process. This service uses [Cloudflare Workers](https://workers.cloudflare.com) and [Cloudflare D1](https://developers.cloudflare.com/d1/) to securely and efficiently manage tasks across platforms, integrating GitHub issue tracking with Motion workspaces and projects.
 
 ## Key Features
 
@@ -71,7 +71,7 @@ wrangler d1 migrations apply github_motion_sync_db --remote
 ```
 
 5. **Get Secrets**
-   - Motion API Key: Login to your account on the Motion website, go to Settings, then API, then API Keys, and create an API Key.
+   - Motion API Key: Login to your account on the [Motion website](https://app.usemotion.com), go to Settings, then API, then API Keys, and create an API Key.
    - Motion Workspace ID: Run the workspaces.js script to get the internal ID for the Motion Workspace.
 
 ```bash
