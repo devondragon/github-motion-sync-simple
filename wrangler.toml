@@ -1,0 +1,15 @@
+#:schema node_modules/wrangler/config-schema.json
+name = "github-motion-sync"
+main = "src/index.ts"
+compatibility_date = "2024-10-22"
+
+# Workers Logs
+# Docs: https://developers.cloudflare.com/workers/observability/logs/workers-logs/
+# Configuration: https://developers.cloudflare.com/workers/observability/logs/workers-logs/#enable-workers-logs
+[observability]
+enabled = true
+
+[[d1_databases]]
+binding = "DB"                                          # Name to reference in the worker
+database_name = "github-motion-sync-simple"
+database_id = "191755b0-6427-41c7-9db1-e37647ebf22cddd"
