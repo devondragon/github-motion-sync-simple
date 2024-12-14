@@ -120,6 +120,13 @@ Repeat for all Repositories whose Issues you want synced to Motion.
 DONE!
 
 
+## 403s?
+
+If you are seeing 403s for your Webhook Worker from GitHub and issues aren't syncing through, you may need to setup a Cloudflare WAF rule to skip some WAF checks for your Worker, as the payload of the Webhook event can include HTML, JS, etc...  if it is in your Issue description.
+
+For the custom domain you have the Worker URL mapped to, in the Cloudflare Admin, go to Security -> WAF -> Custom Rules, and create a rule with a hostname or other match for your endpoint, and Skip All Managed Rules. You may need to expand More components to skip and also skip user agent blocking, brower integrity check, and Managed rules (Previous version), depending on your setup.
+
+
 ## Contributing
 
 We welcome contributions! Please follow these steps:
