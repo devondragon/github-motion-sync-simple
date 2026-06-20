@@ -10,13 +10,13 @@
 	},
 	"dependencies": {
 		"chanfana": "^2.0.2",
-		"hono": "^4.12.21",
+		"hono": "^4.12.25",
 		"zod": "^3.23.8"
 	},
 	"devDependencies": {
 		"@cloudflare/workers-types": "^4.20241022.0",
 		"@types/node": "20.8.3",
 		"@types/service-worker-mock": "^2.0.1",
-		"wrangler": "^4.77.0"
+		"wrangler": "^4.103.0"
 	}
 }
